@@ -14,9 +14,9 @@ void    enqueue(int n)
 		printf("Queue Full!\n");
 		return ;
 	}
-	queue[queue_size] = n;
 	tail++;
 	queue_size++;
+	queue[tail] = n;
 }
 
 int	dequeue()
